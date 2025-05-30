@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Vanna GPT Connector",
+  "name_for_model": "query_vanna",
+  "description_for_model": "Send natural language queries to Vanna AI and receive structured responses",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://adityasudhakar.github.io/openapi.yaml"
+  },
+  "logo_url": "https://aditya.sudhakar.github.io/logo.png",
+  "contact_email": "adi@vanna.ai",
+  "legal_info_url": "https://vanna.ai/legal"
+}
