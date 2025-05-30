@@ -1,0 +1,38 @@
+openapi: 3.0.1
+info:
+  title: Vanna Plugin API
+  version: '1.0'
+paths:
+  /query_vanna:
+    post:
+      summary: Send query to Vanna
+      operationId: queryVanna
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+                user_email:
+                  type: string
+                agent_id:
+                  type: string
+              required:
+                - message
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  type:
+                    type: string
+                  text:
+                    type: string
+servers:
+  - url: https://us-central1-customer-457021.cloudfunctions.net
